@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #533a2e;
+}
+img {
+    display: block;
+    width: 100%;
+}
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 20px;
+    list-style: none;
+    margin: 0;
+}
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    font-size: 20px;
+    font-weight: bold;
+    /* color: #f9f4f4; */
+}
+.navigation a:hover {
+    color: #533a2e;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.3s ease-out;
+    padding: 5px 0;
+    z-index: 999;
+    color: #f9f4f4;
+}
+.header a {
+    color: #f9f4f4;
+}
+.header_active {
+    background: #f9f4f4;
+    /* #293B5F */
+}
+.header_active a {
+    color: #533a2e;
+}
+
+.logo-wrap img {
+    width: 60px;
+}
+.logo-wrap {
+    width: 100px;
+    height: auto;
+}
+.wrap {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 15px;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.body-sl {
+    font-family: 'Muli', sans-serif;
+    overflow: hidden;
+    margin: 0;
+    background: url('./images/bg-slide-nnk.jfif');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.container{
+    width: 100%;
+    display: flex;
+    padding: 0 20px; /*0 сверху, 20 по бокам*/
+}
+
+.slide{
+    height: 80vh;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    color: #fff;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+
+.slide h3{
+    position: absolute;
+    font-size: 25px;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.slide.active{
+    flex: 10;
+
+}
+
+.slide.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+
+footer {
+    background: #f9f4f4;
+    color: #533a2e;
+} /*фон подвала */
+.social-icons ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.social-icons ul li a span {
+    color: #000;
+    width: 34px;
+    background: #fff;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    border-radius: 20px;
+    font-size: 25px;
+    margin: 1px 8px;
+    border-radius: 20px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    -moz-transition: 0.5s all;
+}
+.social-icons ul li a span:hover {
+    color: #0ccbf1;
+}
+.copy-bottom-txt p {
+    font-size: 18px;
+    color: #533a2e;
+
+}
+.social-icons ul li:nth-child(2) {
+    margin: 0 10px;
+}
+.copy-bottom-txt p a {
+    font-size: 18px;
+    color: #000;
+    letter-spacing: 1px;
+    transition: 0.4s;
+}
+.copy-bottom-txt p a:hover {
+    color: #000;
+    text-decoration: underline;
+    padding-top: 4px;
+    font-weight: 700;
+}
+.slide2{
+    background: #fdfbfb;
+}
+.my {
+    color: #533a2e;
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: 1px;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.sl3-text{
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+    color: #533a2e;
+    font-weight: bold;
+}

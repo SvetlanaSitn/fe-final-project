@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+}
+html {
+    overflow-x: hidden;
+}
+body {
+    margin: 0;
+    min-width: 320px;
+    font-family: "Source Sans Pro", sans-serif;
+    color: #533a2e;
+}
+img {
+    display: block;
+    width: 100%;
+}
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 20px;
+    list-style: none;
+    margin: 0;
+}
+.navigation a {
+    text-decoration: none;
+    display: block;
+    padding: 1em;
+    font-size: 20px;
+    font-weight: bold;
+    /* color: #f9f4f4; */
+}
+.navigation a:hover {
+    color: #533a2e;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: 0.3s ease-out;
+    padding: 5px 0;
+    z-index: 999;
+    color: #f9f4f4;
+}
+.header a {
+    color: #f9f4f4;
+}
+.header_active {
+    background: #f9f4f4;
+    /* #293B5F */
+}
+.header_active a {
+    color: #533a2e;
+}
+
+.logo-wrap img {
+    width: 60px;
+}
+.logo-wrap {
+    width: 100px;
+    height: auto;
+}
+.wrap {
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 0 15px;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.flexEmotions {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.quote {
+    background-color: #f9f4f4;
+    color: #533a2e;
+    font-size: 40px;
+    text-align: center;
+    margin: 0;
+}
+.slide3 {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+.containerM {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.slide3 {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.slide3-photo {
+    width: 50%;
+    height: 500px;
+    position: relative;
+}
+.slide3-content {
+    width: 50%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #533a2e;
+    font-size: 20px;
+}
+.slide3-wrap {
+    background-color: #f9f4f4;
+    overflow: hidden;
+}
+/* .slide4-wrap{
+    background: url(./images/bg-sl4.jpg);
+} */
+.slide4{
+    background: #f9f4f4;
+
+}
+.slide4-content {
+    position: relative;
+    top: 110px;
+    left: 40%;
+    margin-top: -150px;
+    color: #533a2e;
+    font-size: 20px;
+}
+.wrapEmotions {
+    position: relative;
+    top: -500px;
+    font-size: 25px;
+    color: #533a2e;
+}
+.wrapEmotions ul {
+    list-style: none;
+    letter-spacing: 2px;
+}
+.wrapEmotions ul li::before {
+    content: url("./images/favicon-32x32.png");
+}
+.hText {
+    color: #533a2e;
+    text-align: center;
+    position: relative;
+    top: -520px;
+}
+.emCol {
+    border: solid 10px black;
+    border-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E %3ClinearGradient id='g' x1='0%25' y1='0%25' x2='0%25' y2='100%25'%3E%3Cstop offset='0%25' stop-color='%23cffffe' /%3E%3Cstop offset='25%25' stop-color='%23f9f7d9' /%3E%3Cstop offset='50%25' stop-color='%23fce2ce' /%3E%3Cstop offset='100%25' stop-color='%23ffc1f3' /%3E%3C/linearGradient%3E %3Cpath d='M1.5 1.5 l97 0l0 97l-97 0 l0 -97' stroke-linecap='square' stroke='url(%23g)' stroke-width='3'/%3E %3C/svg%3E")
+        1;
+    border-radius: 10%;
+    background: rgb(207, 59, 112);
+    background: rgb(207, 59, 112);
+    background: linear-gradient(
+        0deg,
+        rgba(207, 59, 112, 1) 0%,
+        rgba(187, 124, 183, 0.8972631288843662) 35%,
+        rgba(104, 209, 210, 1) 100%
+    );
+    padding-right: 10px;
+}
+.emCol h2 {
+    padding-left: 30px;
+}
+
+footer {
+    background: #f9f4f4;
+    color: #533a2e;
+    margin-top: -400px;
+} /*фон подвала */
+.social-icons ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.social-icons ul li a span {
+    color: #000;
+    width: 34px;
+    background: #fff;
+    height: 34px;
+    text-align: center;
+    line-height: 34px;
+    border-radius: 20px;
+    font-size: 25px;
+    margin: 1px 8px;
+    border-radius: 20px;
+    transition: 0.5s all;
+    -webkit-transition: 0.5s all;
+    transition: 0.5s all;
+    -moz-transition: 0.5s all;
+}
+.social-icons ul li a span:hover {
+    color: #0ccbf1;
+}
+.copy-bottom-txt p {
+    font-size: 18px;
+    color: #533a2e;
+    ;
+}
+.social-icons ul li:nth-child(2) {
+    margin: 0 10px;
+}
+.copy-bottom-txt p a {
+    font-size: 18px;
+    color: #000;
+    letter-spacing: 1px;
+    transition: 0.4s;
+}
+.copy-bottom-txt p a:hover {
+    color: #000;
+    text-decoration: underline;
+    padding-top: 4px;
+    font-weight: 700;
+}
+
